@@ -1,4 +1,4 @@
-data = []
+data = [] # 100m reviews
 count = 0
 
 with open('original.txt', 'r') as f:
@@ -15,3 +15,10 @@ for d in data:
 	
 average = sum_len / len(data)
 print('The average numbers of words per reply is:', average)
+
+new = [] # 21XXX reviews (filtered)
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('There are', len(new),'reviews that are less than 100 words.')
+print(new[12])
