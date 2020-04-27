@@ -22,3 +22,10 @@ for d in data:
 		new.append(d)
 print('There are', len(new),'reviews that are less than 100 words.')
 print(new[12])
+
+good = [] # 162550 reviews (filtered)
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('There are', len(good),'reviews that are containing the words "good" in their content.')		
+print(word[1])
